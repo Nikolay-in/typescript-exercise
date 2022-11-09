@@ -1,6 +1,10 @@
 // Part 1: Declare (5) Variables With Type
 
-
+const spacecraftName: string = 'Determination';
+const speedMph: number = 17500;
+const kilometersToMars: number = 225000000;
+const kilometersToTheMoon: number = 384400;
+const milesPerKilometer: number = 0.621;
 
 // Part 2: Print Days to Mars
 
