@@ -8,11 +8,13 @@ const milesPerKilometer: number = 0.621;
 
 // Part 2: Print Days to Mars
 
-
+const milesToMars = kilometersToMars * milesPerKilometer;
+const hoursToMars = milesToMars / speedMph;
+const daysToMars = hoursToMars / 24;
 
 // Code an output statement here (use a template literal):
 
-
+console.log(`${spacecraftName} would take ${daysToMars} days to get to Mars.`);
 
 // Part 3: Create a Function ("getDaysToLocation")
 
