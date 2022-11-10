@@ -1,7 +1,9 @@
 // TODO: 
 // * Code the Astronaut, Cargo, and Rocket classes in new files.
 // * Import the three classes into this file.
-
+import { Astronaut } from "./Astronaut";
+import { Cargo } from "./Cargo";
+import { Rocket } from "./Rocket";
 
 let falcon9: Rocket = new Rocket('Falcon 9', 7500);
 
@@ -34,9 +36,9 @@ for (let i = 0; i < cargo.length; i++) {
     let c = cargo[i];
     let loaded = '';
     if (falcon9.addCargo(c)) {
-        loaded = "Loaded"
+        loaded = "Loaded";
     } else {
-        loaded = "Not loaded"
+        loaded = "Not loaded";
     }
     console.log(`${c.material}: ${loaded}`);
 }
